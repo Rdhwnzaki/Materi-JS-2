@@ -3,14 +3,13 @@ const name = ['Abigail', 'Alexandra', 'Alison', 'Amanda', 'Angela', 'Bella', 'Ca
 
 const searchName = (nama) => {
     var newName = name
-    newName.forEach(
-        function a(array) {
-            let lowArr = array.toLowerCase()
-            let regex = nama.toLowerCase()
-            let result = lowArr.match(regex)
-            let output = [result]
-            console.log(output)
-        }
+    newName.forEach(function (array) {
+        let lowArr = array.toLowerCase()
+        let regex = nama.toLowerCase()
+        let result = lowArr.match(regex)
+        let output = [result]
+        console.log(output)
+    }
     )
 
 }
