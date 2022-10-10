@@ -11,4 +11,4 @@ const seleksiNilai = (nilaiAwal, nilaiAkhir, dataArray) => {
         console.log('Jumlah angka dalam dataArray harus lebih dari 5')
     }
 }
-seleksiNilai(3, 5, [1, 2, 3, 5, 6, 4])
+seleksiNilai(3, 5, [2, 3, 5, 6, 4])

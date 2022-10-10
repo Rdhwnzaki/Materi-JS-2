@@ -45,7 +45,7 @@ console.log(contohConcat)
 /*Slice
 Method slice digunakan untuk memilih satu atau beberapa item dari sebuah array */
 
-const contohSlice = ['apple', 'banana', 'cherry', 'mangga']
+const contohSlice = ['apel', 'pisang', 'semangka', 'mangga']
 const contohSliceBaru = contohSlice.slice(0, 2)
 console.log(contohSliceBaru)
 
@@ -66,17 +66,17 @@ console.log(contohIncludes)
 /*Splice
 Method splice digunakan untuk menambah, menghapus atau mengganti elemen dari sebuah array */
 
-//Contoh hapus
+// Contoh hapus
 var hari = ['senin', 'selasa', 'rabu', 'kamis', 'jumat', 'sabtu', 'minggu']
 hari.splice(0, 3)
 console.log(hari)
 
-//contoh tambah
-var hari = ['senin', 'selasa', 'jumat', 'sabtu', 'minggu']
-hari.splice(2, 0, 'rabu', 'kamis')
-console.log(hari)
+// //contoh tambah
+// // var hari = ['senin', 'selasa', 'jumat', 'sabtu', 'minggu']
+// // hari.splice(2, 0, 'rabu', 'kamis')
+// // console.log(hari)
 
-//Contoh ganti
-var hari = ['rabu', 'jumat', 'sabtu']
-hari.splice(0, 1, 'kamis')
-console.log(hari)
+// // //Contoh ganti
+// var hari = ['rabu', 'jumat', 'sabtu']
+// hari.splice(0, 1, 'kamis')
+// console.log(hari)
