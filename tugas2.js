@@ -2,16 +2,13 @@ const name = ['Abigail', 'Alexandra', 'Alison', 'Amanda', 'Angela', 'Bella', 'Ca
     'Caroline', 'Carolyn', 'Deirdre', 'Diana', 'Elizabeth', 'Ella', 'Faith', 'Olivia', 'Penelope']
 
 const searchName = (nama, jumlah, callback) => {
-    name.forEach(function (array) {
-        var lowArr = array.toLowerCase()
-        var regex = nama.toLowerCase()
-        var result = lowArr.match(regex)
-        var output = [result, result.index, result.input]
-        console.log(output)
-    }
-    )
+    var newArray = name.filter(elemen => elemen.toLowerCase().includes(nama.toLowerCase()))
+        .filter((elemen, i) => i < jumlah)
+    callback(newArray)
 }
-searchName('an')
+searchName('an', 4, data => {
+    console.log(data)
+})
 
 
 
